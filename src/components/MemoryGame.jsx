@@ -144,7 +144,7 @@ function MemoryGame() {
         <div className="mt-4 text-lg font-semibold">
           {matchedCards.size === slice.length
             ? "Congratulations! You matched all cards!"
-            : "Time's up! Game over!"}
+            : `${seconds <= 0 ? "Time's up! Game over!" : ""}`}
         </div>
       )}
     </div>
